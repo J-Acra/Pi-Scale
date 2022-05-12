@@ -159,6 +159,7 @@ class ButtonsReader(Thread):
                                     self.send_url_request()
                                 else:
                                     self.send_print_helper(ceil(float(format(float(weight), ".2f"))))
+                                    self.send_url_request()
                                 #print(event)
                         else:
                             print("Printer is busy")
