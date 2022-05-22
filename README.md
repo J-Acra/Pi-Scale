@@ -1,2 +1,5 @@
-# Smart-Scale-Pi
-Code for a customized software solution for a smart-scale prototype. Written in Python for a raspberry pi 4.
+# Pi-Scale Summary #
+A customized software solution for a smart-scale prototype. The Raspberry Pi is connected to a small screen and a GPIO Board for connecting 4 Buttons, As well as having a scale, printer, and usb scanner connected. This software integrates this hardware to create the following user experience. When running, the R-Pi receives simultaneous input from both the scanner and scale (multi-threaded to avoid input conflict in infinite loop). After receiving desired input, user can interact with the 4 buttons to Print, Reset Count/lot, Pause Machine, and Print Last label. When printing, the R-Pi will generate a QR-Code on a Label and print it with Unique Details(Time/Date/Id/Weight/ScannedCode). After printed, it will also send this information via HTTP request to Backend to be stored.
+
+## Hardware ##
+Raspberry Pi 4-Canakit | 6" HDMI Screen | Zebra ZD420 Label Printer | Tera D5100Y Usb Barcode Scanner | Fairbanks Scale Model SCB-R9000-14U | 4x Joystick Buttons with GPIO board
